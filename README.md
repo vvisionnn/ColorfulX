@@ -2,7 +2,9 @@
 
 ColorfulX is a Metal-backed gradient renderer for Apple platforms. It combines LAB color interpolation, spring-based animation, and a configurable compute pipeline to produce vivid multicolor backgrounds from SwiftUI, UIKit, and AppKit.
 
-![Screenshot](./Example/Screenshot.png)
+> Fork of [Lakr233/ColorfulX](https://github.com/Lakr233/ColorfulX) that ships only the package sources. The example app, development scripts, and CI workflow are removed; only the library is kept.
+
+![Screenshot](https://raw.githubusercontent.com/Lakr233/ColorfulX/main/Example/Screenshot.png)
 
 ## Highlights
 
@@ -10,7 +12,6 @@ ColorfulX is a Metal-backed gradient renderer for Apple platforms. It combines L
 - `AnimatedMulticolorGradientView` drives time-based updates with frame limiting, noise, bias, and transition controls.
 - `ColorfulView` exposes the renderer to SwiftUI using familiar bindings, while `MulticolorGradient` covers static gradients.
 - Built-in presets (`ColorfulPreset`) and the `ColorfulColors` protocol make it easy to capture repeatable palettes.
-- Example app (`Example/ColorfulApp`) showcases live controls for every parameter, including frame limiting and render scaling.
 
 ## Requirements
 
@@ -36,12 +37,6 @@ Add `ColorfulX` to any target that needs the library:
 ```
 
 Xcode users can also add the package through **File → Add Packages…** and paste the repository URL.
-
-## Example App
-
-- Open `Example/ColorfulApp.xcodeproj` or the workspace inside `Example/ColorfulApp.xcworkspace`.
-- Run the **ColorfulApp** scheme on your preferred device or simulator.
-- Use the control panel to tweak preset selection, speed, bias, noise, transition speed, frame limit, and render scale. The chessboard overlay (`ChessboardView`) helps visualise transparency on visionOS/macOS.
 
 ## SwiftUI Usage
 
@@ -211,9 +206,7 @@ Tips:
 Bug reports and pull requests are welcome on GitHub issues. When contributing:
 
 1. Fork the repository and create a feature branch.
-2. Update or add SwiftUI/Example demos if behaviour changes.
-3. Run the Example app to verify visual regressions.
-4. Submit a pull request with a clear summary of the change.
+2. Submit a pull request with a clear summary of the change.
 
 ## License
 
